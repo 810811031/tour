@@ -1,0 +1,10 @@
+<view class="_footer">
+	<view class="_tablist">
+		<view class="_tab" wx:for="{{ list }}" data-index="{{ index }}" bindtap="handleTo">
+			<image src="{{ item.activeIcon }}" wx:if="{{ index == current }}"></image>
+			<image src="{{ item.unActiveIcon }}" wx:else ></image>
+			<text class="{{ index == current ? 'activeColor' : '' }}">{{ item.label }}</text>
+		</view>
+	</view>
+	<view class="_none" style="height: {{ safePadding }}px"></view>
+</view>

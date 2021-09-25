@@ -1,0 +1,16 @@
+<nav-view title="长颈鹿户外拼友" />
+
+<content-view>
+	<view class="wrapper">
+		<view class="commond">
+			<image class="icon" src="/assets/images/system.png" bindtap="handleNone"></image>
+			<view class="input-wrapper">
+				<input type="text" placeholder="快来探索精彩路线" placeholder-style="color:#bbb; font-size: 24rpx;" />
+				<image src="/assets/images/search.png"></image>
+			</view>
+			<image class="icon" src="/assets/images/email.png" bindtap="handleNone"></image>
+		</view>
+	</view>
+</content-view>
+
+<wux-dialog id="wux-dialog" />

@@ -1,0 +1,64 @@
+page {
+	background-color: rgb(240, 242, 245);
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.wrapper .project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-top: 66rpx;
+}
+
+.wrapper .project .card {
+    width: 375rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+}
+
+.wrapper .project .card .image {
+    width: 196rpx;
+    height: 196rpx;
+    position: relative;
+    margin-bottom: 30rpx;
+}
+
+.wrapper .project .card .image image:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .project .card .image image:nth-of-type(2) {
+    width: 42rpx;
+    height: 42rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.wrapper .project .card text {
+    color: #222;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.wrapper .submit {
+    width: 304rpx;
+    height: 67rpx;
+    line-height: 67rpx;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 80rpx;
+    font-size: 30rpx;
+    border-radius: 34rpx;
+    transition: background .1s linear;
+}

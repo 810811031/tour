@@ -1,0 +1,8 @@
+<cover-view class="_nav">
+	<!-- 设备状态栏高度 -->
+	<cover-view class="_device-height" 
+		style="height: {{ deviceStatusHeight }}px" />
+	<cover-view class="_nav-title">
+		{{ title }}
+	</cover-view>
+</cover-view>

@@ -1,0 +1,21 @@
+<nav-view title="个人信息" />
+
+<content-view>
+    <view class="wrapper">
+        <button bindtap="getUserProfile" class="userInfo" wx:if="{{ !userInfo }}">
+            <image src="/assets/images/my_head.png"></image>
+            <text>未登录</text>
+        </button>
+        <view class="userInfo border" wx:else>
+            <image src="{{ userInfo.avatarUrl }}"></image>
+            <text>{{ userInfo.nickName }}</text>
+        </view>
+        <view class="list-wrapper">
+            <view class="list" wx:for="{{ list }}" wx:key="index">
+                <image src="{{ item.icon }}"></image>
+                <text>{{ item.text }}</text>
+                <image src="/assets/images/common_next.png"></image>
+            </view>
+        </view>
+    </view>
+</content-view>

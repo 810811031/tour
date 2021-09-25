@@ -1,0 +1,6 @@
+._content {
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 88rpx;
+	margin-bottom: 100rpx;
+}

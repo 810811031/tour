@@ -1,0 +1,46 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/start/start",
+		
+		"pages/my/my"
+	],
+	"window": {
+		"navigationStyle": "custom",
+		"backgroundColor": "#ffffff"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"usingComponents": {
+		"nav-view": "components/nav/nav",
+		"content-view": "components/content/content",
+		"wux-dialog": "miniprogram_npm/wux-weapp/dialog/index"
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#333",
+		"selectedColor": "#F4C932",
+		"borderStyle": "black",
+    	"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "拼团",
+				"iconPath": "assets/images/tab_index_unActive.png",
+				"selectedIconPath": "assets/images/tab_index_active.png"
+			},
+			{
+				"pagePath": "pages/start/start",
+				"text": "开团",
+				"iconPath": "assets/images/tab_start_unActive.png",
+				"selectedIconPath": "assets/images/tab_start_active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "assets/images/tab_my_unActive.png",
+				"selectedIconPath": "assets/images/tab_my_active.png"
+			}
+		]
+	}
+}

@@ -1,0 +1,20 @@
+<nav-view title="选择分类" />
+
+<content-view>
+    <view class="wrapper">
+        <view class="project">
+            <view class="card" wx:for="{{ list }}" wx:key="index" bindtap="handleSelectCard" data-index="{{ index }}">
+                <view class="image">
+                    <image src="{{ item.cover }}"></image>
+                    <image src="/assets/images/start_checked.png" wx:if="{{ item.checked }}"></image>
+                </view>
+                <text>{{ item.label }}</text>
+            </view>
+        </view>
+        <view class="submit" bindtap="handleSubmit" style="background: {{ checkedList.length > 0 ? 'rgb(255, 199, 35)' : 'rgb(151, 151, 151)'  }}">
+            下一步
+        </view>
+    </view>
+</content-view>
+
+<wux-dialog id="wux-dialog" />

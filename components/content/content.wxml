@@ -1,0 +1,5 @@
+<view class="_content">
+	<view class="_none" style="height: {{ statusBarHeight }}px"></view>
+	<slot></slot>
+	<view class="_none" style="height: {{ footerPadding }}px"></view>
+</view>
